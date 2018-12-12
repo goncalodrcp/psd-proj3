@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Dec 12 14:02:22 2018
+# Process ID: 608
+# Current directory: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/train_features_synth_1
+# Command line: vivado -log train_features.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source train_features.tcl
+# Log file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/train_features_synth_1/train_features.vds
+# Journal file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/train_features_synth_1/vivado.jou
+#-----------------------------------------------------------
+source train_features.tcl -notrace
