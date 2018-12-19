@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.sim/sim_1/synth/timing/xsim/circuit_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM32X1S_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD1
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD2
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD3
+INFO: [VRFC 10-311] analyzing module RAM64X1S_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM64X1S_HD4
+INFO: [VRFC 10-311] analyzing module circuit
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module train_classes
+INFO: [VRFC 10-311] analyzing module train_features
+INFO: [VRFC 10-311] analyzing module train_classes_dist_mem_gen_v8_0_12
+INFO: [VRFC 10-311] analyzing module train_classes_dist_mem_gen_v8_0_12_synth
+INFO: [VRFC 10-311] analyzing module train_classes_spram
+INFO: [VRFC 10-311] analyzing module train_features_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module train_features_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module train_features_blk_mem_gen_prim_width__parameterized0
+INFO: [VRFC 10-311] analyzing module train_features_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module train_features_blk_mem_gen_prim_wrapper_init__parameterized0
+INFO: [VRFC 10-311] analyzing module train_features_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module train_features_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-311] analyzing module train_features_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-311] analyzing module glbl

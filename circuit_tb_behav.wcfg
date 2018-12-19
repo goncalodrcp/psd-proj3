@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="66945996fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <ZoomStartTime time="375955840fs"></ZoomStartTime>
+      <ZoomEndTime time="548474033fs"></ZoomEndTime>
+      <Cursor1Time time="515000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="154"></NameColumnWidth>
-      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="23" />
+   <WVObjectSize size="32" />
    <wvobject type="logic" fp_name="/circuit_tb/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -28,118 +28,10 @@
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/test_instance">
-      <obj_property name="ElementShortName">test_instance[63:0]</obj_property>
-      <obj_property name="ObjectShortName">test_instance[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/test_instance_f1">
-      <obj_property name="ElementShortName">test_instance_f1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">test_instance_f1[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/test_instance_f2">
-      <obj_property name="ElementShortName">test_instance_f2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">test_instance_f2[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/test_instance_f3">
-      <obj_property name="ElementShortName">test_instance_f3[15:0]</obj_property>
-      <obj_property name="ObjectShortName">test_instance_f3[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/test_instance_f4">
-      <obj_property name="ElementShortName">test_instance_f4[15:0]</obj_property>
-      <obj_property name="ObjectShortName">test_instance_f4[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
    <wvobject type="array" fp_name="/circuit_tb/uut/mem_address">
       <obj_property name="ElementShortName">mem_address[6:0]</obj_property>
       <obj_property name="ObjectShortName">mem_address[6:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/train_instance_class">
-      <obj_property name="ElementShortName">train_instance_class[1:0]</obj_property>
-      <obj_property name="ObjectShortName">train_instance_class[1:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/train_instance_features">
-      <obj_property name="ElementShortName">train_instance_features[63:0]</obj_property>
-      <obj_property name="ObjectShortName">train_instance_features[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/train_instance_f1">
-      <obj_property name="ElementShortName">train_instance_f1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">train_instance_f1[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/train_instance_f2">
-      <obj_property name="ElementShortName">train_instance_f2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">train_instance_f2[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/train_instance_f3">
-      <obj_property name="ElementShortName">train_instance_f3[15:0]</obj_property>
-      <obj_property name="ObjectShortName">train_instance_f3[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/train_instance_f4">
-      <obj_property name="ElementShortName">train_instance_f4[15:0]</obj_property>
-      <obj_property name="ObjectShortName">train_instance_f4[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/difference_f1">
-      <obj_property name="ElementShortName">difference_f1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">difference_f1[31:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">26</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/difference_f2">
-      <obj_property name="ElementShortName">difference_f2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">difference_f2[31:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">26</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/difference_f3">
-      <obj_property name="ElementShortName">difference_f3[31:0]</obj_property>
-      <obj_property name="ObjectShortName">difference_f3[31:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">26</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/difference_f4">
-      <obj_property name="ElementShortName">difference_f4[31:0]</obj_property>
-      <obj_property name="ObjectShortName">difference_f4[31:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">26</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/total_difference">
       <obj_property name="ElementShortName">total_difference[31:0]</obj_property>
@@ -153,9 +45,11 @@
       <obj_property name="ElementShortName">r1_difference[31:0]</obj_property>
       <obj_property name="ObjectShortName">r1_difference[31:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">26</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r2_difference">
       <obj_property name="ElementShortName">r2_difference[31:0]</obj_property>
@@ -164,13 +58,129 @@
       <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">26</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r3_difference">
+      <obj_property name="ElementShortName">r3_difference[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r3_difference[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">26</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r4_difference">
+      <obj_property name="ElementShortName">r4_difference[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r4_difference[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">26</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r5_difference">
+      <obj_property name="ElementShortName">r5_difference[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r5_difference[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">26</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r1_class">
       <obj_property name="ElementShortName">r1_class[1:0]</obj_property>
       <obj_property name="ObjectShortName">r1_class[1:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r1_enable">
-      <obj_property name="ElementShortName">r1_enable</obj_property>
-      <obj_property name="ObjectShortName">r1_enable</obj_property>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r2_class">
+      <obj_property name="ElementShortName">r2_class[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r2_class[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r3_class">
+      <obj_property name="ElementShortName">r3_class[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r3_class[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r4_class">
+      <obj_property name="ElementShortName">r4_class[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r4_class[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/r5_class">
+      <obj_property name="ElementShortName">r5_class[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r5_class[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_counter">
+      <obj_property name="ElementShortName">class1_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">class1_counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_counter">
+      <obj_property name="ElementShortName">class2_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">class2_counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_counter">
+      <obj_property name="ElementShortName">class3_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">class3_counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_1">
+      <obj_property name="ElementShortName">class1_adder_entry_1</obj_property>
+      <obj_property name="ObjectShortName">class1_adder_entry_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_2">
+      <obj_property name="ElementShortName">class1_adder_entry_2</obj_property>
+      <obj_property name="ObjectShortName">class1_adder_entry_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_3">
+      <obj_property name="ElementShortName">class1_adder_entry_3</obj_property>
+      <obj_property name="ObjectShortName">class1_adder_entry_3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_4">
+      <obj_property name="ElementShortName">class1_adder_entry_4</obj_property>
+      <obj_property name="ObjectShortName">class1_adder_entry_4</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_5">
+      <obj_property name="ElementShortName">class1_adder_entry_5</obj_property>
+      <obj_property name="ObjectShortName">class1_adder_entry_5</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_1">
+      <obj_property name="ElementShortName">class2_adder_entry_1</obj_property>
+      <obj_property name="ObjectShortName">class2_adder_entry_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_2">
+      <obj_property name="ElementShortName">class2_adder_entry_2</obj_property>
+      <obj_property name="ObjectShortName">class2_adder_entry_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_3">
+      <obj_property name="ElementShortName">class2_adder_entry_3</obj_property>
+      <obj_property name="ObjectShortName">class2_adder_entry_3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_4">
+      <obj_property name="ElementShortName">class2_adder_entry_4</obj_property>
+      <obj_property name="ObjectShortName">class2_adder_entry_4</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_5">
+      <obj_property name="ElementShortName">class2_adder_entry_5</obj_property>
+      <obj_property name="ObjectShortName">class2_adder_entry_5</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_1">
+      <obj_property name="ElementShortName">class3_adder_entry_1</obj_property>
+      <obj_property name="ObjectShortName">class3_adder_entry_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_2">
+      <obj_property name="ElementShortName">class3_adder_entry_2</obj_property>
+      <obj_property name="ObjectShortName">class3_adder_entry_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_3">
+      <obj_property name="ElementShortName">class3_adder_entry_3</obj_property>
+      <obj_property name="ObjectShortName">class3_adder_entry_3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_4">
+      <obj_property name="ElementShortName">class3_adder_entry_4</obj_property>
+      <obj_property name="ObjectShortName">class3_adder_entry_4</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_5">
+      <obj_property name="ElementShortName">class3_adder_entry_5</obj_property>
+      <obj_property name="ObjectShortName">class3_adder_entry_5</obj_property>
    </wvobject>
 </wave_config>

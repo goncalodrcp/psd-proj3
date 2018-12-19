@@ -14,7 +14,8 @@ entity circuit is
 port (
     clk : in std_logic;
     reset : in std_logic;
-    test_instance : in std_logic_vector (63 downto 0)
+    test_instance : in std_logic_vector (63 downto 0);
+    k : in  std_logic_vector (2 downto 0)
 );
 end circuit;
 
@@ -50,7 +51,8 @@ architecture Behavioral of circuit is
         reset : in std_logic;
         train_instance_features : in std_logic_vector (63 downto 0);
         train_instance_class : in std_logic_vector (1 downto 0);
-        test_instance_features : in std_logic_vector (63 downto 0)
+        test_instance_features : in std_logic_vector (63 downto 0);
+        enable : in std_logic
     );
     end component;
     
@@ -58,11 +60,13 @@ architecture Behavioral of circuit is
     port (
         clk : in std_logic;
         reset : in std_logic;
-        mem_addr : out std_logic_vector (6 downto 0)
+        mem_addr : out std_logic_vector (6 downto 0);
+        enable : out std_logic
     );
     end component;
     
     -- Extra signals!
+    signal enable : std_logic;
     signal zeros : std_logic_vector (63 downto 0);
     signal mem_address: std_logic_vector (6 downto 0);
     signal train_instance_class : std_logic_vector (1 downto 0);
@@ -101,14 +105,16 @@ begin
         reset => reset,
         train_instance_features => train_instance_features,
         train_instance_class => train_instance_class,
-        test_instance_features => test_instance
+        test_instance_features => test_instance,
+        enable => enable
     );
     
     inst_control : control
     port map (
         clk => clk,
         reset => reset,
-        mem_addr => mem_address
+        mem_addr => mem_address,
+        enable => enable
     );
     
 

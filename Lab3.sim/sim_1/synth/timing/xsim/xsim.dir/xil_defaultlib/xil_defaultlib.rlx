@@ -1,0 +1,6 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.sim/sim_1/synth/timing/xsim/circuit_tb_time_synth.v,1545240642,verilog,,,,RAM32X1S_HD1;RAM32X1S_HD2;RAM32X1S_HD3;RAM32X1S_UNIQ_BASE_;RAM64X1S_HD4;RAM64X1S_UNIQ_BASE_;circuit;control;glbl;train_classes;train_classes_dist_mem_gen_v8_0_12;train_classes_dist_mem_gen_v8_0_12_synth;train_classes_spram;train_features;train_features_blk_mem_gen_generic_cstr;train_features_blk_mem_gen_prim_width;train_features_blk_mem_gen_prim_width__parameterized0;train_features_blk_mem_gen_prim_wrapper_init;train_features_blk_mem_gen_prim_wrapper_init__parameterized0;train_features_blk_mem_gen_top;train_features_blk_mem_gen_v8_4_1;train_features_blk_mem_gen_v8_4_1_synth,,,,,,,,
+/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sim_1/new/circuit_tb.vhd,1545066551,vhdl,,,,circuit_tb,,,,,,,,

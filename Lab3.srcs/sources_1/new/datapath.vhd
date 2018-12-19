@@ -17,7 +17,8 @@ port (
     reset : in std_logic;
     train_instance_features : in std_logic_vector (63 downto 0);
     train_instance_class : in std_logic_vector (1 downto 0);
-    test_instance_features : in std_logic_vector (63 downto 0)
+    test_instance_features : in std_logic_vector (63 downto 0);
+    enable : in std_logic
 );
 end datapath;
 
@@ -36,7 +37,8 @@ architecture Behavioral of datapath is
         clk : in std_logic;
         reset : in std_logic;
         difference : in std_logic_vector (31 downto 0);
-        class : in std_logic_vector (1 downto 0)
+        class : in std_logic_vector (1 downto 0);
+        enable : in std_logic
     );
     end component;
 
@@ -104,7 +106,8 @@ begin
         clk => clk,
         reset => reset,
         difference => total_difference,
-        class => train_instance_class
+        class => train_instance_class,
+        enable => enable
     );
     
     -- TODO: Check for overflow possibility

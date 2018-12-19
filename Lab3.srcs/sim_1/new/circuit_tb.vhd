@@ -18,7 +18,8 @@ architecture Behavioral of circuit_tb is
     port (
         clk : in std_logic;
         reset : in std_logic;
-        test_instance : in std_logic_vector (63 downto 0)
+        test_instance : in std_logic_vector (63 downto 0);
+        k : in  std_logic_vector (2 downto 0)
     );
     end component;
 
@@ -26,6 +27,7 @@ architecture Behavioral of circuit_tb is
     signal clk : std_logic := '0';
     signal reset : std_logic := '1';
     signal test_instance : std_logic_vector (63 downto 0) := X"c99a699a96663333";
+    signal k : std_logic_vector (2 downto 0) := "101";
 
     -- Outputs
     -- TBD
@@ -39,7 +41,8 @@ begin
     port map (
         clk => clk,
         reset => reset,
-        test_instance => test_instance
+        test_instance => test_instance,
+        k => k
     );
 
     -- Clock definition
@@ -51,11 +54,11 @@ begin
 
     -- hold reset state for 10 clock cycles
     reset <= '1';
-    wait for 10*clk_period;
+    wait for 97.5 ns;
 
     -- return reset to low
     reset <= '0';
-    wait for 150*clk_period;
+    wait for 120*clk_period;
 
     reset <= '1';
     wait for 5*clk_period;

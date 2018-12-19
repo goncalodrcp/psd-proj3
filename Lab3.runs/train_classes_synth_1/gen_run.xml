@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="train_classes_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1544624625">
-  <File Type="RDS-UTIL" Name="train_classes_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="train_classes_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="train_classes_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="train_classes.vds"/>
   <File Type="RDS-DCP" Name="train_classes.dcp"/>
   <File Type="PA-TCL" Name="train_classes.tcl"/>

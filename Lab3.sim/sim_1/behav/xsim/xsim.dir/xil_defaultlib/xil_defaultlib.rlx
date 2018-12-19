@@ -3,13 +3,13 @@
 Jun 14 2018
 20:07:38
 /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
-/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sim_1/new/circuit_tb.vhd,1545066551,vhdl,,,,circuit_tb,,,,,,,,
+/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sim_1/new/circuit_tb.vhd,1545244059,vhdl,,,,circuit_tb,,,,,,,,
 /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sim_1/new/control_tb.vhd,1544624868,vhdl,,,,control_tb,,,,,,,,
 /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sim_1/new/datapath_tb.vhd,1544637751,vhdl,,,,datapath_tb,,,,,,,,
 /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_classes/sim/train_classes.v,1544624624,verilog,,,,train_classes,,,,,,,,
 /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_features/sim/train_features.v,1545058317,verilog,,/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_classes/sim/train_classes.v,,train_features,,,,,,,,
-/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd,1545060404,vhdl,,,,circuit,,,,,,,,
-/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd,1544624861,vhdl,,,,control,,,,,,,,
-/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd,1545060295,vhdl,,,,datapath,,,,,,,,
+/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd,1545243963,vhdl,,,,circuit,,,,,,,,
+/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd,1545246127,vhdl,,,,control,,,,,,,,
+/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd,1545243340,vhdl,,,,datapath,,,,,,,,
 /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd,1544637945,vhdl,,,,feature_comparator,,,,,,,,
-/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd,1545074915,vhdl,,,,sorted_registers,,,,,,,,
+/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd,1545246503,vhdl,,,,sorted_registers,,,,,,,,

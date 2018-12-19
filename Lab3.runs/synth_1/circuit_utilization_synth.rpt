@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Mon Dec 17 19:19:25 2018
+| Date         : Wed Dec 19 19:09:04 2018
 | Host         : coelhopc running 64-bit Ubuntu 18.10
 | Command      : report_utilization -file circuit_utilization_synth.rpt -pb circuit_utilization_synth.pb
 | Design       : circuit
