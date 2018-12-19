@@ -20,40 +20,74 @@ port (
 end sorted_registers;
 
 architecture Behavioral of sorted_registers is
-    -- Signals
-    signal distance_1 : std_logic_vector(31 downto 0) := X"00000000";
-    signal class_1 : std_logic_vector(1 downto 0) := "11";
+    -- Signals/component
 
-    signal distance_2 : std_logic_vector(31 downto 0) := X"00000000";
-    signal class_2 : std_logic_vector(1 downto 0) := "11";
+    -- Register 1
+    signal r1_difference : std_logic_vector (31 downto 0) := X"00000000";
+    signal r1_class : std_logic_vector (1 downto 0) := "11";
+    signal r1_comparator : std_logic := '0';
+    signal r1_enable : std_logic := '0';
 
-    signal distance_3 : std_logic_vector(31 downto 0) := X"00000000";
-    signal class_3 : std_logic_vector(1 downto 0) := "11";
+    -- Register 2
+    signal r2_difference : std_logic_vector (31 downto 0) := X"00000000";
+    signal r2_class : std_logic_vector (1 downto 0) := "11";
+    signal r2_comparator : std_logic := '0';
+    signal r2_enable : std_logic := '0';
 
-    signal distance_4 : std_logic_vector(31 downto 0) := X"00000000";
-    signal class_4 : std_logic_vector(1 downto 0) := "11";
-    
-    signal distance_5 : std_logic_vector(31 downto 0) := X"00000000";
-    signal class_5 : std_logic_vector(1 downto 0) := "11";
+    -- Register 3
+    signal r3_difference : std_logic_vector (31 downto 0) := X"00000000";
+    signal r3_class : std_logic_vector (1 downto 0) := "11";
+    -- signal r3_comparator : std_logic := '0';
+    -- signal r3_enable : std_logic := '0';
+
+    -- Register 4
+    signal r4_difference : std_logic_vector (31 downto 0) := X"00000000";
+    signal r4_class : std_logic_vector (1 downto 0) := "11";
+    -- signal r4_comparator : std_logic := '0';
+    -- signal r4_enable : std_logic := '0';
+
+    -- Register 5
+    signal r5_difference : std_logic_vector (31 downto 0) := X"00000000";
+    signal r5_class : std_logic_vector (1 downto 0) := "11";
+    -- signal r5_comparator : std_logic := '0';
+    -- signal r5_enable : std_logic := '0';
+
 begin
+
+    -- Comparator signals
+    r1_comparator <= '1' when difference < r1_difference else '0';
+    r2_comparator <= '1' when difference < r2_difference else '0';
+    -- r3_comparator <= '1' when difference < r3_difference else '0';
+    -- r4_comparator <= '1' when difference < r4_difference else '0';
+    -- r5_comparator <= '1' when difference < r5_difference else '0';
+
+    -- Register enable
+    r1_enable <= '1' when r1_class = "11" else r1_comparator;
+    r2_enable <= '1' when r2_class = "11" else r2_comparator;
+    
+
     -- Clocking data to registers
     process (clk)
     begin
         if clk'event and clk = '1' then
             if reset = '1' then
                 -- Reset counter
-                distance_1 <= X"00000000";
-                distance_2 <= X"00000000";
-                distance_3 <= X"00000000";
-                distance_4 <= X"00000000";
-                class_1 <= "11";
-                class_2 <= "11";
-                class_3 <= "11";
-                class_4 <= "11";
+                r1_difference <= X"00000000";
+                r1_class <= "11"; -- Not used                
             else
-                -- Check all registers
+                if r1_enable = '1' then
+                    r1_difference <= difference;
+                    r1_class <= class;
+                end if;
+                if r2_enable = '1' then
+                    r2_difference <= r1_difference;
+                    r2_class <= r1_class;
+                end if;
+
             end if;
         end if;
-end process;
+    end process;
+
+
 
 end Behavioral;

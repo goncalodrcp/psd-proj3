@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
--- Date        : Wed Dec 12 14:03:57 2018
+-- Date        : Mon Dec 17 15:20:53 2018
 -- Host        : coelhopc running 64-bit Ubuntu 18.10
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_features/train_features_stub.vhdl

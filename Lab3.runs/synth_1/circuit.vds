@@ -1,0 +1,410 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Dec 17 19:18:50 2018
+# Process ID: 7252
+# Current directory: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1
+# Command line: vivado -log circuit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source circuit.tcl
+# Log file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/circuit.vds
+# Journal file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source circuit.tcl -notrace
+Command: synth_design -top circuit -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7258 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.355 ; gain = 85.863 ; free physical = 4165 ; free virtual = 10304
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'circuit' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:21]
+INFO: [Synth 8-3491] module 'train_classes' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-7252-coelhopc/realtime/train_classes_stub.vhdl:5' bound to instance 'inst_train_classes' of component 'train_classes' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'train_classes' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-7252-coelhopc/realtime/train_classes_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'train_features' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-7252-coelhopc/realtime/train_features_stub.vhdl:5' bound to instance 'inst_train_features' of component 'train_features' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'train_features' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-7252-coelhopc/realtime/train_features_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'datapath' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:14' bound to instance 'inst_datapath' of component 'datapath' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:24]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_1' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'feature_comparator' (1#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:20]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_2' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:81]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_3' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:88]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_4' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:95]
+INFO: [Synth 8-3491] module 'sorted_registers' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:13' bound to instance 'inst_sorted_registers' of component 'sorted_registers' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'sorted_registers' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'sorted_registers' (2#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (3#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:24]
+INFO: [Synth 8-3491] module 'control' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:15' bound to instance 'inst_control' of component 'control' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'control' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'control' (4#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'circuit' (5#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:21]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port clk
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port reset
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[31]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[30]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[29]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[28]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[27]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[26]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[25]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[24]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[23]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[22]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[21]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[20]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[19]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[18]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[17]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[16]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[15]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[14]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[13]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[12]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[11]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[10]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[9]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[8]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[7]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[6]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[5]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[4]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[3]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[2]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[1]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[0]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port class[1]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port class[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.980 ; gain = 130.488 ; free physical = 4178 ; free virtual = 10317
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.980 ; gain = 130.488 ; free physical = 4178 ; free virtual = 10317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.980 ; gain = 130.488 ; free physical = 4178 ; free virtual = 10317
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_features/train_features/train_features_in_context.xdc] for cell 'inst_train_features'
+Finished Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_features/train_features/train_features_in_context.xdc] for cell 'inst_train_features'
+Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_classes/train_classes/train_classes_in_context.xdc] for cell 'inst_train_classes'
+Finished Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_classes/train_classes/train_classes_in_context.xdc] for cell 'inst_train_classes'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.371 ; gain = 0.000 ; free physical = 3941 ; free virtual = 10080
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 4005 ; free virtual = 10144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 4005 ; free virtual = 10144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst_train_features. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_train_classes. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 4007 ; free virtual = 10146
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 4008 ; free virtual = 10147
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     17 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module feature_comparator 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+Module control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[63]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[62]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[61]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[60]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[59]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[58]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[57]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[56]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[55]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[54]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[53]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[52]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[51]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[50]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[49]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[48]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[47]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[46]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[45]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[44]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[43]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[42]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[41]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[40]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[39]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[38]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[37]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[36]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[35]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[34]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[33]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[32]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[31]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[30]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[29]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[28]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[27]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[26]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[25]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[24]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[23]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[22]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[21]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[20]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[19]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[18]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[17]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[16]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[15]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[14]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[13]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[12]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[11]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[10]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[9]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[8]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[7]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[6]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[5]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[4]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[3]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[2]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[1]
+WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3995 ; free virtual = 10136
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3873 ; free virtual = 10013
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3873 ; free virtual = 10013
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3871 ; free virtual = 10012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3871 ; free virtual = 10012
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3871 ; free virtual = 10012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3871 ; free virtual = 10012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3871 ; free virtual = 10012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3871 ; free virtual = 10012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3871 ; free virtual = 10012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |train_classes  |         1|
+|2     |train_features |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |train_classes_bbox_0  |     1|
+|2     |train_features_bbox_1 |     1|
+|3     |BUFG                  |     1|
+|4     |LUT1                  |     1|
+|5     |LUT2                  |     1|
+|6     |LUT3                  |     2|
+|7     |LUT4                  |     1|
+|8     |LUT5                  |     2|
+|9     |LUT6                  |     1|
+|10    |FDRE                  |     7|
+|11    |IBUF                  |     2|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+---------------+--------+------+
+|      |Instance       |Module  |Cells |
++------+---------------+--------+------+
+|1     |top            |        |   148|
+|2     |  inst_control |control |    15|
++------+---------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3871 ; free virtual = 10012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 64 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1614.371 ; gain = 130.488 ; free physical = 3926 ; free virtual = 10067
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1614.371 ; gain = 432.879 ; free physical = 3926 ; free virtual = 10067
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1638.387 ; gain = 468.484 ; free physical = 3914 ; free virtual = 10055
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/circuit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file circuit_utilization_synth.rpt -pb circuit_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1662.398 ; gain = 0.000 ; free physical = 3914 ; free virtual = 10055
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 17 19:19:25 2018...

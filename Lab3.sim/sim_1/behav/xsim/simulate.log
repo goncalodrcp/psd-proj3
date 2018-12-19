@@ -1,2 +1,52 @@
 Vivado Simulator 2018.2
 Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module circuit_tb.uut.inst_train_features.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module circuit_tb.uut.inst_train_features.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_1 WARNING: Address 6c is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 6c is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 6d is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 6d is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 6e is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 6e is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 6f is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 6f is outside range for B Read
+WARNING in circuit_tb.uut.inst_train_classes.inst at time              1215000 ns: 
+Reading from out-of-range address. Max address in circuit_tb.uut.inst_train_classes.inst is         111
+blk_mem_gen_v8_4_1 WARNING: Address 70 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 70 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 71 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 71 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 72 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 72 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 73 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 73 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 74 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 74 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 75 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 75 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 76 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 76 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 77 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 77 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 78 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 78 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 79 is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 79 is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 7a is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 7a is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 7b is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 7b is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 7c is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 7c is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 7d is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 7d is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 7e is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 7e is outside range for B Read
+blk_mem_gen_v8_4_1 WARNING: Address 7f is outside range for A Read
+blk_mem_gen_v8_4_1 WARNING: Address 7f is outside range for B Read

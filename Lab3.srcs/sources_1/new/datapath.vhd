@@ -13,6 +13,8 @@ use ieee.STD_LOGIC_UNSIGNED.ALL;
 
 entity datapath is
 port (
+    clk : in std_logic;
+    reset : in std_logic;
     train_instance_features : in std_logic_vector (63 downto 0);
     train_instance_class : in std_logic_vector (1 downto 0);
     test_instance_features : in std_logic_vector (63 downto 0)
@@ -26,6 +28,15 @@ architecture Behavioral of datapath is
         train_feature : in std_logic_vector (15 downto 0);
         test_feature : in std_logic_vector (15 downto 0);
         difference : out std_logic_vector (31 downto 0)
+    );
+    end component;
+    
+    component sorted_registers is
+    port (
+        clk : in std_logic;
+        reset : in std_logic;
+        difference : in std_logic_vector (31 downto 0);
+        class : in std_logic_vector (1 downto 0)
     );
     end component;
 
@@ -88,6 +99,15 @@ begin
         difference => difference_f4
     );
     
+    inst_sorted_registers : sorted_registers
+    port map (
+        clk => clk,
+        reset => reset,
+        difference => total_difference,
+        class => train_instance_class
+    );
+    
+    -- TODO: Check for overflow possibility
     total_difference <= difference_f1 + difference_f2 + difference_f3 + difference_f4;
     
     
