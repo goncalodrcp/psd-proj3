@@ -15,7 +15,8 @@ port (
     clk : in std_logic;
     reset : in std_logic;
     test_instance : in std_logic_vector (63 downto 0);
-    k : in  std_logic_vector (2 downto 0)
+    k : in std_logic_vector (2 downto 0);
+    pred : out std_logic_vector (1 downto 0)
 );
 end circuit;
 
@@ -52,7 +53,10 @@ architecture Behavioral of circuit is
         train_instance_features : in std_logic_vector (63 downto 0);
         train_instance_class : in std_logic_vector (1 downto 0);
         test_instance_features : in std_logic_vector (63 downto 0);
-        enable : in std_logic
+        enable : in std_logic;
+        k : in  std_logic_vector (2 downto 0);
+        done : in std_logic;
+        pred: out std_logic_vector(1 downto 0)
     );
     end component;
     
@@ -61,12 +65,14 @@ architecture Behavioral of circuit is
         clk : in std_logic;
         reset : in std_logic;
         mem_addr : out std_logic_vector (6 downto 0);
-        enable : out std_logic
+        enable : out std_logic;
+        done: out std_logic
     );
     end component;
     
     -- Extra signals!
     signal enable : std_logic;
+    signal done: std_logic;
     signal zeros : std_logic_vector (63 downto 0);
     signal mem_address: std_logic_vector (6 downto 0);
     signal train_instance_class : std_logic_vector (1 downto 0);
@@ -106,7 +112,10 @@ begin
         train_instance_features => train_instance_features,
         train_instance_class => train_instance_class,
         test_instance_features => test_instance,
-        enable => enable
+        enable => enable,
+        k => k,
+        done => done,
+        pred => pred
     );
     
     inst_control : control
@@ -114,7 +123,8 @@ begin
         clk => clk,
         reset => reset,
         mem_addr => mem_address,
-        enable => enable
+        enable => enable,
+        done => done
     );
     
 

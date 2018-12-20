@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Dec 19 19:08:28 2018
-# Process ID: 9179
+# Start of session at: Thu Dec 20 20:14:24 2018
+# Process ID: 9720
 # Current directory: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1
 # Command line: vivado -log circuit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source circuit.tcl
 # Log file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/circuit.vds
@@ -15,73 +15,35 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9185 
+INFO: Helper process launched with PID 9727 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.352 ; gain = 85.863 ; free physical = 3287 ; free virtual = 9422
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.355 ; gain = 85.863 ; free physical = 6421 ; free virtual = 10958
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'circuit' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:22]
-INFO: [Synth 8-3491] module 'train_classes' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9179-coelhopc/realtime/train_classes_stub.vhdl:5' bound to instance 'inst_train_classes' of component 'train_classes' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:79]
-INFO: [Synth 8-638] synthesizing module 'train_classes' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9179-coelhopc/realtime/train_classes_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'train_features' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9179-coelhopc/realtime/train_features_stub.vhdl:5' bound to instance 'inst_train_features' of component 'train_features' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'train_features' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9179-coelhopc/realtime/train_features_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'datapath' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:14' bound to instance 'inst_datapath' of component 'datapath' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:102]
-INFO: [Synth 8-638] synthesizing module 'datapath' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:25]
-INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_1' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'circuit' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:23]
+INFO: [Synth 8-3491] module 'train_classes' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9720-coelhopc/realtime/train_classes_stub.vhdl:5' bound to instance 'inst_train_classes' of component 'train_classes' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'train_classes' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9720-coelhopc/realtime/train_classes_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'train_features' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9720-coelhopc/realtime/train_features_stub.vhdl:5' bound to instance 'inst_train_features' of component 'train_features' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'train_features' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9720-coelhopc/realtime/train_features_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'datapath' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:14' bound to instance 'inst_datapath' of component 'datapath' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:28]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_1' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:82]
 INFO: [Synth 8-638] synthesizing module 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'feature_comparator' (1#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:20]
-INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_2' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:83]
-INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_3' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:90]
-INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_4' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:97]
-INFO: [Synth 8-3491] module 'sorted_registers' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:14' bound to instance 'inst_sorted_registers' of component 'sorted_registers' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:104]
-INFO: [Synth 8-638] synthesizing module 'sorted_registers' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'sorted_registers' (2#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'datapath' (3#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:25]
-INFO: [Synth 8-3491] module 'control' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:15' bound to instance 'inst_control' of component 'control' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:112]
-INFO: [Synth 8-638] synthesizing module 'control' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'control' (4#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'circuit' (5#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:22]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port clk
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port reset
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[31]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[30]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[29]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[28]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[27]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[26]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[25]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[24]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[23]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[22]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[21]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[20]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[19]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[18]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[17]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[16]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[15]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[14]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[13]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[12]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[11]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[10]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[9]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[8]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[7]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[6]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[5]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[4]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[3]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[2]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[1]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port difference[0]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port class[1]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port class[0]
-WARNING: [Synth 8-3331] design sorted_registers has unconnected port enable
-WARNING: [Synth 8-3331] design circuit has unconnected port k[2]
-WARNING: [Synth 8-3331] design circuit has unconnected port k[1]
-WARNING: [Synth 8-3331] design circuit has unconnected port k[0]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_2' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:89]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_3' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:96]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_4' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:103]
+INFO: [Synth 8-3491] module 'sorted_registers' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:14' bound to instance 'inst_sorted_registers' of component 'sorted_registers' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'sorted_registers' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'sorted_registers' (2#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (3#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:28]
+INFO: [Synth 8-3491] module 'control' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:15' bound to instance 'inst_control' of component 'control' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'control' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'control' (4#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'circuit' (5#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:23]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port k[1]
+WARNING: [Synth 8-3331] design sorted_registers has unconnected port k[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.977 ; gain = 130.488 ; free physical = 3299 ; free virtual = 9435
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.980 ; gain = 130.488 ; free physical = 6432 ; free virtual = 10969
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -94,10 +56,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.977 ; gain = 130.488 ; free physical = 3300 ; free virtual = 9436
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.980 ; gain = 130.488 ; free physical = 6432 ; free virtual = 10969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.977 ; gain = 130.488 ; free physical = 3300 ; free virtual = 9436
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.980 ; gain = 130.488 ; free physical = 6432 ; free virtual = 10969
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -113,16 +75,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.352 ; gain = 0.000 ; free physical = 3066 ; free virtual = 9202
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1651.355 ; gain = 0.000 ; free physical = 6207 ; free virtual = 10724
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3132 ; free virtual = 9268
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6270 ; free virtual = 10792
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3132 ; free virtual = 9268
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6270 ; free virtual = 10792
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -130,10 +92,12 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for inst_train_features. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst_train_classes. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3134 ; free virtual = 9270
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6272 ; free virtual = 10793
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'comp_c2_c3_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:160]
+WARNING: [Synth 8-327] inferring latch for variable 'comp_c1_c2_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:159]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3126 ; free virtual = 9263
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6262 ; free virtual = 10784
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -146,11 +110,18 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 3     
+	   4 Input     32 Bit       Adders := 1     
 	   3 Input     17 Bit       Adders := 4     
 	   2 Input      7 Bit       Adders := 1     
+	   5 Input      3 Bit       Adders := 3     
 +---Registers : 
+	               32 Bit    Registers := 5     
 	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -162,10 +133,21 @@ Module feature_comparator
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     17 Bit       Adders := 1     
+Module sorted_registers 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input      3 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                2 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
 Module datapath 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 3     
+	   4 Input     32 Bit       Adders := 1     
 Module control 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -188,69 +170,140 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[63]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[62]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[61]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[60]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[59]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[58]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[57]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[56]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[55]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[54]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[53]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[52]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[51]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[50]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[49]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[48]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[47]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[46]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[45]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[44]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[43]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[42]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[41]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[40]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[39]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[38]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[37]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[36]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[35]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[34]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[33]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[32]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[31]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[30]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[29]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[28]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[27]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[26]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[25]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[24]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[23]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[22]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[21]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[20]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[19]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[18]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[17]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[16]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[15]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[14]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[13]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[12]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[11]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[10]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[9]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[8]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[7]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[6]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[5]
-WARNING: [Synth 8-3331] design circuit has unconnected port test_instance[4]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP inst_datapath/feature_comparator_1/sqr_diff, operation Mode is: A*B.
+DSP Report: operator inst_datapath/feature_comparator_1/sqr_diff is absorbed into DSP inst_datapath/feature_comparator_1/sqr_diff.
+DSP Report: Generating DSP inst_datapath/plusOp, operation Mode is: C+A*B.
+DSP Report: operator inst_datapath/plusOp is absorbed into DSP inst_datapath/plusOp.
+DSP Report: operator inst_datapath/feature_comparator_4/sqr_diff is absorbed into DSP inst_datapath/plusOp.
+DSP Report: Generating DSP inst_datapath/plusOp, operation Mode is: PCIN+A*B.
+DSP Report: operator inst_datapath/plusOp is absorbed into DSP inst_datapath/plusOp.
+DSP Report: operator inst_datapath/feature_comparator_3/sqr_diff is absorbed into DSP inst_datapath/plusOp.
+DSP Report: Generating DSP inst_datapath/plusOp, operation Mode is: PCIN+A*B.
+DSP Report: operator inst_datapath/plusOp is absorbed into DSP inst_datapath/plusOp.
+DSP Report: operator inst_datapath/feature_comparator_2/sqr_diff is absorbed into DSP inst_datapath/plusOp.
+WARNING: [Synth 8-3331] design circuit has unconnected port k[1]
+WARNING: [Synth 8-3331] design circuit has unconnected port k[0]
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[31]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[30]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[29]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[28]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[27]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[26]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[25]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[24]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[23]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[22]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[21]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[20]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[19]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[18]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[17]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[16]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[15]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[14]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[13]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[12]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[11]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[10]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[9]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[8]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[7]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[6]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[5]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[4]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[3]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[2]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[1]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_difference_reg[0]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[31]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[30]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[29]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[28]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[27]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[26]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[25]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[24]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[23]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[22]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[21]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[20]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[19]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[18]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[17]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[16]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[15]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[14]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[13]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[12]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[11]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[10]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[9]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[8]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[7]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[6]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[5]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[4]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[3]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[2]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[1]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_difference_reg[0]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_class_reg[1]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r1_class_reg[0]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_class_reg[1]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r2_class_reg[0]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[31]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[30]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[29]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[28]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[27]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[26]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[25]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[24]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[23]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[22]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[21]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[20]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[19]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[18]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[17]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[16]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[15]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[14]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[13]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[12]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[11]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[10]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[9]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[8]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[7]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[6]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[5]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[4]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[3]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[2]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[1]) is unused and will be removed from module circuit.
+WARNING: [Synth 8-3332] Sequential element (inst_datapath/inst_sorted_registers/r3_difference_reg[0]) is unused and will be removed from module circuit.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3114 ; free virtual = 9252
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6251 ; free virtual = 10774
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|feature_comparator | A*B         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|feature_comparator | C+A*B       | 17     | 17     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|feature_comparator | PCIN+A*B    | 17     | 17     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|feature_comparator | PCIN+A*B    | 17     | 17     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -262,13 +315,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3226 ; free virtual = 9364
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10651
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3226 ; free virtual = 9364
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10651
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -280,7 +333,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3224 ; free virtual = 9362
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10650
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -304,7 +357,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3224 ; free virtual = 9362
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10650
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -317,7 +370,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3224 ; free virtual = 9362
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10650
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -329,25 +382,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3224 ; free virtual = 9362
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10650
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3224 ; free virtual = 9362
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10650
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3224 ; free virtual = 9362
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10650
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3224 ; free virtual = 9362
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10650
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -369,28 +422,29 @@ Report Cell Usage:
 |2     |train_features_bbox_1 |     1|
 |3     |BUFG                  |     1|
 |4     |LUT1                  |     1|
-|5     |LUT2                  |     1|
-|6     |LUT3                  |     2|
+|5     |LUT2                  |     2|
+|6     |LUT3                  |     1|
 |7     |LUT4                  |     1|
-|8     |LUT5                  |     2|
-|9     |LUT6                  |     1|
+|8     |LUT5                  |     1|
+|9     |LUT6                  |     3|
 |10    |FDRE                  |     7|
 |11    |IBUF                  |     2|
+|12    |OBUF                  |     2|
 +------+----------------------+------+
 
 Report Instance Areas: 
 +------+---------------+--------+------+
 |      |Instance       |Module  |Cells |
 +------+---------------+--------+------+
-|1     |top            |        |   148|
-|2     |  inst_control |control |    15|
+|1     |top            |        |   151|
+|2     |  inst_control |control |    16|
 +------+---------------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3224 ; free virtual = 9362
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6131 ; free virtual = 10650
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 67 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1614.352 ; gain = 130.488 ; free physical = 3279 ; free virtual = 9417
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1614.352 ; gain = 432.863 ; free physical = 3279 ; free virtual = 9417
+Synthesis finished with 0 errors, 0 critical warnings and 174 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1651.355 ; gain = 130.488 ; free physical = 6185 ; free virtual = 10704
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1651.355 ; gain = 469.863 ; free physical = 6185 ; free virtual = 10704
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -400,11 +454,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+33 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1647.367 ; gain = 477.469 ; free physical = 3279 ; free virtual = 9417
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1651.355 ; gain = 481.453 ; free physical = 6180 ; free virtual = 10699
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/circuit.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file circuit_utilization_synth.rpt -pb circuit_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1671.379 ; gain = 0.000 ; free physical = 3280 ; free virtual = 9418
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 19 19:09:04 2018...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1675.367 ; gain = 0.000 ; free physical = 6182 ; free virtual = 10701
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 20 20:15:00 2018...

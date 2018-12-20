@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="375955840fs"></ZoomStartTime>
-      <ZoomEndTime time="548474033fs"></ZoomEndTime>
-      <Cursor1Time time="515000000fs"></Cursor1Time>
+      <ZoomStartTime time="1115781081fs"></ZoomStartTime>
+      <ZoomEndTime time="1576843784fs"></ZoomEndTime>
+      <Cursor1Time time="1500000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="154"></NameColumnWidth>
-      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+      <NameColumnWidth column_width="142"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="32" />
+   <WVObjectSize size="22" />
    <wvobject type="logic" fp_name="/circuit_tb/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -27,6 +27,10 @@
    <wvobject type="logic" fp_name="/circuit_tb/reset">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_control/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/circuit_tb/uut/mem_address">
       <obj_property name="ElementShortName">mem_address[6:0]</obj_property>
@@ -123,64 +127,20 @@
       <obj_property name="ElementShortName">class3_counter[2:0]</obj_property>
       <obj_property name="ObjectShortName">class3_counter[2:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_1">
-      <obj_property name="ElementShortName">class1_adder_entry_1</obj_property>
-      <obj_property name="ObjectShortName">class1_adder_entry_1</obj_property>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/comp_c1_c2">
+      <obj_property name="ElementShortName">comp_c1_c2</obj_property>
+      <obj_property name="ObjectShortName">comp_c1_c2</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_2">
-      <obj_property name="ElementShortName">class1_adder_entry_2</obj_property>
-      <obj_property name="ObjectShortName">class1_adder_entry_2</obj_property>
+   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/comp_c2_c3">
+      <obj_property name="ElementShortName">comp_c2_c3</obj_property>
+      <obj_property name="ObjectShortName">comp_c2_c3</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_3">
-      <obj_property name="ElementShortName">class1_adder_entry_3</obj_property>
-      <obj_property name="ObjectShortName">class1_adder_entry_3</obj_property>
+   <wvobject type="array" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/pred">
+      <obj_property name="ElementShortName">pred[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pred[1:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_4">
-      <obj_property name="ElementShortName">class1_adder_entry_4</obj_property>
-      <obj_property name="ObjectShortName">class1_adder_entry_4</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class1_adder_entry_5">
-      <obj_property name="ElementShortName">class1_adder_entry_5</obj_property>
-      <obj_property name="ObjectShortName">class1_adder_entry_5</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_1">
-      <obj_property name="ElementShortName">class2_adder_entry_1</obj_property>
-      <obj_property name="ObjectShortName">class2_adder_entry_1</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_2">
-      <obj_property name="ElementShortName">class2_adder_entry_2</obj_property>
-      <obj_property name="ObjectShortName">class2_adder_entry_2</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_3">
-      <obj_property name="ElementShortName">class2_adder_entry_3</obj_property>
-      <obj_property name="ObjectShortName">class2_adder_entry_3</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_4">
-      <obj_property name="ElementShortName">class2_adder_entry_4</obj_property>
-      <obj_property name="ObjectShortName">class2_adder_entry_4</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class2_adder_entry_5">
-      <obj_property name="ElementShortName">class2_adder_entry_5</obj_property>
-      <obj_property name="ObjectShortName">class2_adder_entry_5</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_1">
-      <obj_property name="ElementShortName">class3_adder_entry_1</obj_property>
-      <obj_property name="ObjectShortName">class3_adder_entry_1</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_2">
-      <obj_property name="ElementShortName">class3_adder_entry_2</obj_property>
-      <obj_property name="ObjectShortName">class3_adder_entry_2</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_3">
-      <obj_property name="ElementShortName">class3_adder_entry_3</obj_property>
-      <obj_property name="ObjectShortName">class3_adder_entry_3</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_4">
-      <obj_property name="ElementShortName">class3_adder_entry_4</obj_property>
-      <obj_property name="ObjectShortName">class3_adder_entry_4</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/circuit_tb/uut/inst_datapath/inst_sorted_registers/class3_adder_entry_5">
-      <obj_property name="ElementShortName">class3_adder_entry_5</obj_property>
-      <obj_property name="ObjectShortName">class3_adder_entry_5</obj_property>
+   <wvobject type="array" fp_name="/circuit_tb/k">
+      <obj_property name="ElementShortName">k[2:0]</obj_property>
+      <obj_property name="ObjectShortName">k[2:0]</obj_property>
    </wvobject>
 </wave_config>

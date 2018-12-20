@@ -17,7 +17,10 @@ port (
     reset : in std_logic;
     difference : in std_logic_vector (31 downto 0);
     class : in std_logic_vector (1 downto 0);
-    enable : in std_logic
+    enable : in std_logic;
+    k: in std_logic_vector (2 downto 0);
+    done : in std_logic;
+    pred : out std_logic_vector (1 downto 0)
 );
 end sorted_registers;
 
@@ -74,25 +77,32 @@ architecture Behavioral of sorted_registers is
     signal class2_counter : std_logic_vector (2 downto 0) := "000";
     signal class3_counter : std_logic_vector (2 downto 0) := "000";
 
-    signal class1_adder_entry_1 : std_logic;
-    signal class1_adder_entry_2 : std_logic;
-    signal class1_adder_entry_3 : std_logic;
-    signal class1_adder_entry_4 : std_logic;
-    signal class1_adder_entry_5 : std_logic;
+    signal class1_adder_entry_1 : std_logic := '0';
+    signal class1_adder_entry_2 : std_logic := '0';
+    signal class1_adder_entry_3 : std_logic := '0';
+    signal class1_adder_entry_4 : std_logic := '0';
+    signal class1_adder_entry_5 : std_logic := '0';
 
-    signal class2_adder_entry_1 : std_logic;
-    signal class2_adder_entry_2 : std_logic;
-    signal class2_adder_entry_3 : std_logic;
-    signal class2_adder_entry_4 : std_logic;
-    signal class2_adder_entry_5 : std_logic;
+    signal class2_adder_entry_1 : std_logic := '0';
+    signal class2_adder_entry_2 : std_logic := '0';
+    signal class2_adder_entry_3 : std_logic := '0';
+    signal class2_adder_entry_4 : std_logic := '0';
+    signal class2_adder_entry_5 : std_logic := '0';
 
-    signal class3_adder_entry_1 : std_logic;
-    signal class3_adder_entry_2 : std_logic;
-    signal class3_adder_entry_3 : std_logic;
-    signal class3_adder_entry_4 : std_logic;
-    signal class3_adder_entry_5 : std_logic;
-
+    signal class3_adder_entry_1 : std_logic := '0';
+    signal class3_adder_entry_2 : std_logic := '0';
+    signal class3_adder_entry_3 : std_logic := '0';
+    signal class3_adder_entry_4 : std_logic := '0';
+    signal class3_adder_entry_5 : std_logic := '0';
+    
+    signal k_ext : std_logic_vector (2 downto 0);
+    
+    signal comp_c1_c2 : std_logic := '0';
+    signal comp_c2_c3 : std_logic := '0';
+    
 begin
+
+    k_ext <= k(2) & k(2) & k(2);
 
     -- Comparator signals
     r1_comparator <= '1' when difference < r1_difference else '0';
@@ -142,9 +152,18 @@ begin
     class3_adder_entry_4 <= '1' when r4_class = "10" else '0';
     class3_adder_entry_5 <= '1' when r5_class = "10" else '0';
     
-    class1_counter <= "00" &  class1_adder_entry_1 + class1_adder_entry_2 + class1_adder_entry_3 + class1_adder_entry_4 + class1_adder_entry_5;
-    class2_counter <= "00" &  class2_adder_entry_1 + class2_adder_entry_2 + class2_adder_entry_3 + class2_adder_entry_4 + class2_adder_entry_5;
-    class3_counter <= "00" &  class3_adder_entry_1 + class3_adder_entry_2 + class3_adder_entry_3 + class3_adder_entry_4 + class3_adder_entry_5;
+    class1_counter <= ("00" & class1_adder_entry_1) + ("00" & class1_adder_entry_2) + ("00" & class1_adder_entry_3) + (("00" & class1_adder_entry_4) and k_ext) + (("00" & class1_adder_entry_5) and k_ext);
+    class2_counter <= ("00" & class2_adder_entry_1) + ("00" & class2_adder_entry_2) + ("00" & class2_adder_entry_3) + (("00" & class2_adder_entry_4) and k_ext) + (("00" & class2_adder_entry_5) and k_ext);
+    class3_counter <= ("00" & class3_adder_entry_1) + ("00" & class3_adder_entry_2) + ("00" & class3_adder_entry_3) + (("00" & class3_adder_entry_4) and k_ext) + (("00" & class3_adder_entry_5) and k_ext);
+    
+    comp_c1_c2 <= '1' when class1_counter > class2_counter else '0';
+    comp_c2_c3 <= '1' when class2_counter > class3_counter else '0';
+    
+    
+    pred <= "00" when (done = '1' and comp_c1_c2 = '1' and comp_c2_c3 = '1') else
+            "01" when (done = '1' and comp_c1_c2 = '0' and comp_c2_c3 = '1') else
+            "10" when (done = '1' and comp_c1_c2 = '0' and comp_c2_c3 = '0') else
+            "11";
 
     -- Clocking data to registers
     process (clk)
@@ -162,10 +181,7 @@ begin
                 r5_difference <= X"FFFFFFFF"; -- Max value
                 r5_class <= "11"; -- Not used
 
-                class1_counter <= "000";
-                class2_counter <= "000";
-                class3_counter <= "000";
-
+                -- class1_counter <= "000";
             else
                 if r1_enable = '1' then
                     r1_difference <= difference;
@@ -191,7 +207,5 @@ begin
             end if;
         end if;
     end process;
-
-
 
 end Behavioral;

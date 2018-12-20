@@ -19,7 +19,8 @@ architecture Behavioral of circuit_tb is
         clk : in std_logic;
         reset : in std_logic;
         test_instance : in std_logic_vector (63 downto 0);
-        k : in  std_logic_vector (2 downto 0)
+        k : in  std_logic_vector (2 downto 0);
+        pred : out std_logic_vector (1 downto 0)
     );
     end component;
 
@@ -30,6 +31,7 @@ architecture Behavioral of circuit_tb is
     signal k : std_logic_vector (2 downto 0) := "101";
 
     -- Outputs
+    signal pred : std_logic_vector (1 downto 0);
     -- TBD
 
     -- Clock period definitions
@@ -42,7 +44,8 @@ begin
         clk => clk,
         reset => reset,
         test_instance => test_instance,
-        k => k
+        k => k,
+        pred => pred
     );
 
     -- Clock definition
