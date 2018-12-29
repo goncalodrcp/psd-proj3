@@ -1,0 +1,81 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri Dec 21 18:56:45 2018
+| Host         : coelhopc running 64-bit Ubuntu 18.10
+| Command      : report_control_sets -verbose -file fpga_basicIO_control_sets_placed.rpt
+| Design       : fpga_basicIO
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    36 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|     14 |            2 |
+|    16+ |           12 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              60 |           18 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              48 |            6 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             496 |           55 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+------------------------------------------------------------+-------------------+------------------+----------------+
+|     Clock Signal     |                        Enable Signal                       |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------+------------------------------------------------------------+-------------------+------------------+----------------+
+|  inst_clkdiv/CLK     |                                                            |                   |                2 |              4 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_control/sel                              | btnCreg           |                2 |             14 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_control/FSM_onehot_currstate[6]_i_1_n_0  | btnCreg           |                3 |             14 |
+|  clk_IBUF_BUFG       |                                                            |                   |                7 |             26 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_control/out[1]                           | btnCreg           |                4 |             32 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_control/out[2]                           | btnCreg           |                4 |             32 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_control/out[3]                           | btnCreg           |                4 |             32 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_control/out[4]                           | btnCreg           |                4 |             32 |
+|  inst_clkdiv/clk10hz |                                                            |                   |               12 |             42 |
+|  clk_IBUF_BUFG       |                                                            | inst_clkdiv/clear |                6 |             48 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_datapath/inst_sorted_registers/r5_enable | btnCreg           |                7 |             68 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_datapath/inst_sorted_registers/r3_enable | btnCreg           |                5 |             68 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_datapath/inst_sorted_registers/r4_enable | btnCreg           |                7 |             68 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_datapath/inst_sorted_registers/r1_enable | btnCreg           |                8 |             68 |
+|  clk_IBUF_BUFG       | inst_circuit/inst_datapath/inst_sorted_registers/r2_enable | btnCreg           |                7 |             68 |
++----------------------+------------------------------------------------------------+-------------------+------------------+----------------+
+
+

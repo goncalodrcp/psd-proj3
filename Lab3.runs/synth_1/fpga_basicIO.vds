@@ -1,0 +1,447 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Dec 21 18:55:03 2018
+# Process ID: 9080
+# Current directory: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1
+# Command line: vivado -log fpga_basicIO.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_basicIO.tcl
+# Log file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/fpga_basicIO.vds
+# Journal file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fpga_basicIO.tcl -notrace
+Command: synth_design -top fpga_basicIO -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9084 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.355 ; gain = 85.863 ; free physical = 5325 ; free virtual = 10177
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fpga_basicIO' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/fpga_basicIO.vhd:27]
+INFO: [Synth 8-3491] module 'disp7' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/disp7.vhd:9' bound to instance 'inst_disp7' of component 'disp7' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/fpga_basicIO.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'disp7' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/disp7.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'disp7' (1#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/disp7.vhd:21]
+INFO: [Synth 8-3491] module 'hex2disp' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/hex2disp.vhd:14' bound to instance 'inst_hex0' of component 'hex2disp' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/fpga_basicIO.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'hex2disp' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/hex2disp.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'hex2disp' (2#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/hex2disp.vhd:21]
+INFO: [Synth 8-3491] module 'hex2disp' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/hex2disp.vhd:14' bound to instance 'inst_hex1' of component 'hex2disp' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/fpga_basicIO.vhd:94]
+INFO: [Synth 8-3491] module 'hex2disp' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/hex2disp.vhd:14' bound to instance 'inst_hex2' of component 'hex2disp' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/fpga_basicIO.vhd:95]
+INFO: [Synth 8-3491] module 'hex2disp' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/hex2disp.vhd:14' bound to instance 'inst_hex3' of component 'hex2disp' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/fpga_basicIO.vhd:96]
+INFO: [Synth 8-3491] module 'clkdiv' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/clkdiv.vhd:9' bound to instance 'inst_clkdiv' of component 'clkdiv' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/fpga_basicIO.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/clkdiv.vhd:15]
+INFO: [Synth 8-113] binding component instance 'BUFG_INST2' to cell 'BUFG' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/clkdiv.vhd:40]
+INFO: [Synth 8-113] binding component instance 'BUFG_INST3' to cell 'BUFG' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/clkdiv.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (3#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/clkdiv.vhd:15]
+INFO: [Synth 8-3491] module 'circuit' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:13' bound to instance 'inst_circuit' of component 'circuit' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/fpga_basicIO.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'circuit' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:26]
+INFO: [Synth 8-3491] module 'train_classes' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9080-coelhopc/realtime/train_classes_stub.vhdl:5' bound to instance 'inst_train_classes' of component 'train_classes' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'train_classes' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9080-coelhopc/realtime/train_classes_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'train_features' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9080-coelhopc/realtime/train_features_stub.vhdl:5' bound to instance 'inst_train_features' of component 'train_features' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'train_features' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/.Xil/Vivado-9080-coelhopc/realtime/train_features_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'datapath' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:14' bound to instance 'inst_datapath' of component 'datapath' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:28]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_1' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'feature_comparator' (4#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:20]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_2' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:89]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_3' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:96]
+INFO: [Synth 8-3491] module 'feature_comparator' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/feature_comparator.vhd:12' bound to instance 'feature_comparator_4' of component 'feature_comparator' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:103]
+INFO: [Synth 8-3491] module 'sorted_registers' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:14' bound to instance 'inst_sorted_registers' of component 'sorted_registers' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'sorted_registers' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'sorted_registers' (5#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/sorted_registers.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (6#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/datapath.vhd:28]
+INFO: [Synth 8-3491] module 'control' declared at '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:15' bound to instance 'inst_control' of component 'control' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'control' [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'control' (7#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/control.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'circuit' (8#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/circuit.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'fpga_basicIO' (9#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/new/fpga_basicIO.vhd:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.980 ; gain = 130.488 ; free physical = 5336 ; free virtual = 10188
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.980 ; gain = 130.488 ; free physical = 5336 ; free virtual = 10188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.980 ; gain = 130.488 ; free physical = 5336 ; free virtual = 10188
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_features/train_features/train_features_in_context.xdc] for cell 'inst_circuit/inst_train_features'
+Finished Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_features/train_features/train_features_in_context.xdc] for cell 'inst_circuit/inst_train_features'
+Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_classes/train_classes/train_classes_in_context.xdc] for cell 'inst_circuit/inst_train_classes'
+Finished Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_classes/train_classes/train_classes_in_context.xdc] for cell 'inst_circuit/inst_train_classes'
+Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/constrs_1/imports/codigo/Basys3_Master.xdc]
+Finished Parsing XDC File [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/constrs_1/imports/codigo/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/constrs_1/imports/codigo/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_basicIO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_basicIO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1659.316 ; gain = 0.000 ; free physical = 5106 ; free virtual = 9943
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1659.316 ; gain = 477.824 ; free physical = 5182 ; free virtual = 10015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1659.316 ; gain = 477.824 ; free physical = 5182 ; free virtual = 10015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst_circuit/inst_train_features. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_circuit/inst_train_classes. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1659.316 ; gain = 477.824 ; free physical = 5184 ; free virtual = 10017
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'currstate_reg' in module 'control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               s_input_k |                          0000001 |                              000
+              s_input_f1 |                          0000010 |                              001
+              s_input_f2 |                          0000100 |                              010
+              s_input_f3 |                          0001000 |                              011
+              s_input_f4 |                          0010000 |                              100
+                  s_calc |                          0100000 |                              101
+                  s_done |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currstate_reg' using encoding 'one-hot' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1659.316 ; gain = 477.824 ; free physical = 5174 ; free virtual = 10007
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   5 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fpga_basicIO 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module disp7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module feature_comparator 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 1     
+Module sorted_registers 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input      3 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                2 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+Module control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      1 Bit        Muxes := 2     
+Module circuit 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP inst_circuit/inst_datapath/feature_comparator_1/sqr_diff, operation Mode is: A*B.
+DSP Report: operator inst_circuit/inst_datapath/feature_comparator_1/sqr_diff is absorbed into DSP inst_circuit/inst_datapath/feature_comparator_1/sqr_diff.
+DSP Report: Generating DSP inst_circuit/inst_datapath/plusOp, operation Mode is: C+A*B.
+DSP Report: operator inst_circuit/inst_datapath/plusOp is absorbed into DSP inst_circuit/inst_datapath/plusOp.
+DSP Report: operator inst_circuit/inst_datapath/feature_comparator_4/sqr_diff is absorbed into DSP inst_circuit/inst_datapath/plusOp.
+DSP Report: Generating DSP inst_circuit/inst_datapath/plusOp, operation Mode is: PCIN+A*B.
+DSP Report: operator inst_circuit/inst_datapath/plusOp is absorbed into DSP inst_circuit/inst_datapath/plusOp.
+DSP Report: operator inst_circuit/inst_datapath/feature_comparator_3/sqr_diff is absorbed into DSP inst_circuit/inst_datapath/plusOp.
+DSP Report: Generating DSP inst_circuit/inst_datapath/plusOp, operation Mode is: PCIN+A*B.
+DSP Report: operator inst_circuit/inst_datapath/plusOp is absorbed into DSP inst_circuit/inst_datapath/plusOp.
+DSP Report: operator inst_circuit/inst_datapath/feature_comparator_2/sqr_diff is absorbed into DSP inst_circuit/inst_datapath/plusOp.
+WARNING: [Synth 8-3917] design fpga_basicIO has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design fpga_basicIO has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design fpga_basicIO has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design fpga_basicIO has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design fpga_basicIO has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design fpga_basicIO has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design fpga_basicIO has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design fpga_basicIO has port led[3] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1659.316 ; gain = 477.824 ; free physical = 5154 ; free virtual = 9989
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|feature_comparator | A*B         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|feature_comparator | C+A*B       | 17     | 17     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|feature_comparator | PCIN+A*B    | 17     | 17     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|feature_comparator | PCIN+A*B    | 17     | 17     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1659.316 ; gain = 477.824 ; free physical = 4967 ; free virtual = 9802
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1691.340 ; gain = 509.848 ; free physical = 4977 ; free virtual = 9812
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1691.340 ; gain = 509.848 ; free physical = 4975 ; free virtual = 9810
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1691.340 ; gain = 509.848 ; free physical = 4975 ; free virtual = 9810
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1691.340 ; gain = 509.848 ; free physical = 4975 ; free virtual = 9810
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1691.340 ; gain = 509.848 ; free physical = 4975 ; free virtual = 9810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1691.340 ; gain = 509.848 ; free physical = 4975 ; free virtual = 9810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1691.340 ; gain = 509.848 ; free physical = 4975 ; free virtual = 9810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1691.340 ; gain = 509.848 ; free physical = 4975 ; free virtual = 9810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |train_classes  |         1|
+|2     |train_features |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |train_classes_bbox_0  |     1|
+|2     |train_features_bbox_1 |     1|
+|3     |BUFG                  |     3|
+|4     |CARRY4                |    46|
+|5     |DSP48E1               |     3|
+|6     |DSP48E1_1             |     1|
+|7     |LUT1                  |     3|
+|8     |LUT2                  |    76|
+|9     |LUT3                  |   147|
+|10    |LUT4                  |   181|
+|11    |LUT5                  |    20|
+|12    |LUT6                  |    79|
+|13    |MUXF7                 |    15|
+|14    |MUXF8                 |     4|
+|15    |FDRE                  |   127|
+|16    |FDSE                  |   171|
+|17    |IBUF                  |    22|
+|18    |OBUF                  |    28|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+----------------------------+---------------------+------+
+|      |Instance                    |Module               |Cells |
++------+----------------------------+---------------------+------+
+|1     |top                         |                     |  1056|
+|2     |  inst_circuit              |circuit              |   900|
+|3     |    inst_control            |control              |    28|
+|4     |    inst_datapath           |datapath             |   672|
+|5     |      feature_comparator_1  |feature_comparator   |    22|
+|6     |      feature_comparator_2  |feature_comparator_0 |     5|
+|7     |      feature_comparator_3  |feature_comparator_1 |     5|
+|8     |      feature_comparator_4  |feature_comparator_2 |     5|
+|9     |      inst_sorted_registers |sorted_registers     |   584|
+|10    |  inst_clkdiv               |clkdiv               |    38|
+|11    |  inst_disp7                |disp7                |    23|
++------+----------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1691.340 ; gain = 509.848 ; free physical = 4975 ; free virtual = 9810
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1691.340 ; gain = 162.512 ; free physical = 5043 ; free virtual = 9878
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1691.348 ; gain = 509.848 ; free physical = 5043 ; free virtual = 9878
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 1723.355 ; gain = 553.453 ; free physical = 5056 ; free virtual = 9891
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/fpga_basicIO.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_basicIO_utilization_synth.rpt -pb fpga_basicIO_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1747.367 ; gain = 0.000 ; free physical = 5058 ; free virtual = 9893
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 21 18:55:47 2018...

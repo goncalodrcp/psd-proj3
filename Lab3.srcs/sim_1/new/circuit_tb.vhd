@@ -18,21 +18,27 @@ architecture Behavioral of circuit_tb is
     port (
         clk : in std_logic;
         reset : in std_logic;
-        test_instance : in std_logic_vector (63 downto 0);
-        k : in  std_logic_vector (2 downto 0);
-        pred : out std_logic_vector (1 downto 0)
+        data_in : in std_logic_vector (15 downto 0);
+        k : in std_logic_vector (2 downto 0);
+        pred : out std_logic_vector (1 downto 0);
+        btn_input : in std_logic_vector(3 downto 0);
+        leds_output : out std_logic_vector (15 downto 0);
+        done : out std_logic
+
     );
     end component;
 
     -- Inputs
     signal clk : std_logic := '0';
     signal reset : std_logic := '1';
-    signal test_instance : std_logic_vector (63 downto 0) := X"c99a699a96663333";
+    signal data : std_logic_vector (15 downto 0) := X"0000";
     signal k : std_logic_vector (2 downto 0) := "101";
+    signal btn_input : std_logic_vector (3 downto 0) := "0000";
 
     -- Outputs
     signal pred : std_logic_vector (1 downto 0);
-    -- TBD
+    signal leds_output : std_logic_vector (15 downto 0);
+    signal done : std_logic;
 
     -- Clock period definitions
     constant clk_period : time := 10 ns;
@@ -43,9 +49,10 @@ begin
     port map (
         clk => clk,
         reset => reset,
-        test_instance => test_instance,
+        data_in => data,
         k => k,
-        pred => pred
+        pred => pred,
+        btn_input => btn_input
     );
 
     -- Clock definition
@@ -56,17 +63,43 @@ begin
     begin
 
     -- hold reset state for 10 clock cycles
-    reset <= '1';
-    wait for 97.5 ns;
+    reset <= '0' after 97.5 ns,
+             '1' after 1900 ns,
+             '0' after 1907.5 ns;
 
-    -- return reset to low
-    reset <= '0';
-    wait for 120*clk_period;
-
-    reset <= '1';
-    wait for 5*clk_period;
-
-    reset <= '0';
+    btn_input <= "1000" after 200 ns, -- Change to input f1
+                 "0000" after 210 ns,
+                 "0100" after 300 ns, -- Change to input f2
+                 "0000" after 310 ns,
+                 "0010" after 400 ns, -- Change to input f3
+                 "0000" after 410 ns,
+                 "0001" after 500 ns, -- Change to input f4
+                 "0000" after 510 ns,
+                 "1000" after 600 ns, -- Change to calc
+                 "0000" after 610 ns,
+                 "1000" after 2200 ns, -- Change to input f1
+                 "0000" after 2210 ns,
+                 "0100" after 2300 ns, -- Change to input f2
+                 "0000" after 2310 ns,
+                 "0010" after 2400 ns, -- Change to input f3
+                 "0000" after 2410 ns,
+                 "0001" after 2500 ns, -- Change to input f4
+                 "0000" after 2510 ns,
+                 "1000" after 2600 ns, -- Change to calc
+                 "0000" after 2610 ns;
+           
+    
+    k <= "011" after 160 ns;
+    
+    -- Class2
+    data <= X"c99a" after 240 ns,
+            X"6ccd" after 340 ns,
+            X"b333" after 440 ns,
+            X"4ccd" after 540 ns,
+            X"A666" after 2240 ns,
+            X"7000" after 2340 ns,
+            X"3000" after 2440 ns,
+            X"0666" after 2540 ns;
     wait;
 
 end process;

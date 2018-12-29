@@ -99,6 +99,7 @@ architecture Behavioral of sorted_registers is
     
     signal comp_c1_c2 : std_logic := '0';
     signal comp_c2_c3 : std_logic := '0';
+    signal comp_c1_c3 : std_logic := '0';
     
 begin
 
@@ -158,12 +159,13 @@ begin
     
     comp_c1_c2 <= '1' when class1_counter > class2_counter else '0';
     comp_c2_c3 <= '1' when class2_counter > class3_counter else '0';
+    comp_c1_c3 <= '1' when class1_counter > class3_counter else '0';
     
-    pred <= r1_class when (done = '1' and k = "001") else 
-            "00" when (done = '1' and comp_c1_c2 = '1' and comp_c2_c3 = '1') else
-            "01" when (done = '1' and comp_c1_c2 = '0' and comp_c2_c3 = '1') else
-            "10" when (done = '1' and comp_c1_c2 = '0' and comp_c2_c3 = '0') else
-            "11";
+    pred <=  r1_class when (done = '1' and k = "001") else 
+            "00" when (done = '1' and ((comp_c1_c2 = '1' and comp_c2_c3 = '1') or (comp_c1_c2 = '1' and comp_c1_c3 = '1'))) else
+            "01" when (done = '1' and ((comp_c1_c2 = '0' and comp_c1_c3 = '1') or (comp_c1_c2 = '0' and comp_c2_c3 = '1'))) else
+            "10" when (done = '1' and ((comp_c1_c2 = '0' and comp_c2_c3 = '0') or (comp_c1_c2 = '1' and comp_c1_c3 = '0'))) else
+            "00";
 
     -- Clocking data to registers
     process (clk)

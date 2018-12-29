@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Dec 20 20:14:24 2018
-# Process ID: 9720
+# Start of session at: Fri Dec 21 18:55:03 2018
+# Process ID: 9080
 # Current directory: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1
-# Command line: vivado -log circuit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source circuit.tcl
-# Log file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/circuit.vds
+# Command line: vivado -log fpga_basicIO.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_basicIO.tcl
+# Log file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/fpga_basicIO.vds
 # Journal file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source circuit.tcl -notrace
+source fpga_basicIO.tcl -notrace
