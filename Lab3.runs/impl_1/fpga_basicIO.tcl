@@ -61,25 +61,95 @@ proc step_failed { step } {
 }
 
 
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
+start_step init_design
+set ACTIVE_STEP init_design
 set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
-  open_checkpoint fpga_basicIO_routed.dcp
+  create_msg_db init_design.pb
+  create_project -in_memory -part xc7a35tcpg236-1
+  set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.cache/wt [current_project]
+  set_property parent.project_path /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.xpr [current_project]
+  set_property ip_output_repo /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.cache/ip [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  catch { write_mem_info -force fpga_basicIO.mmi }
-  write_bitstream -force fpga_basicIO.bit 
-  catch {write_debug_probes -quiet -force fpga_basicIO}
-  catch {file copy -force fpga_basicIO.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
+  add_files -quiet /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.runs/synth_1/fpga_basicIO.dcp
+  read_ip -quiet /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_features/train_features.xci
+  read_ip -quiet /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/sources_1/ip/train_classes/train_classes.xci
+  read_xdc /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.srcs/constrs_1/imports/codigo/Basys3_Master.xdc
+  link_design -top fpga_basicIO -part xc7a35tcpg236-1
+  close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
-  step_failed write_bitstream
+  step_failed init_design
   return -code error $RESULT
 } else {
-  end_step write_bitstream
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force fpga_basicIO_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file fpga_basicIO_drc_opted.rpt -pb fpga_basicIO_drc_opted.pb -rpx fpga_basicIO_drc_opted.rpx"
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step place_design
+set ACTIVE_STEP place_design
+set rc [catch {
+  create_msg_db place_design.pb
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design 
+  write_checkpoint -force fpga_basicIO_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file fpga_basicIO_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file fpga_basicIO_utilization_placed.rpt -pb fpga_basicIO_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file fpga_basicIO_control_sets_placed.rpt"
+  close_msg_db -file place_design.pb
+} RESULT]
+if {$rc} {
+  step_failed place_design
+  return -code error $RESULT
+} else {
+  end_step place_design
+  unset ACTIVE_STEP 
+}
+
+start_step route_design
+set ACTIVE_STEP route_design
+set rc [catch {
+  create_msg_db route_design.pb
+  route_design 
+  write_checkpoint -force fpga_basicIO_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file fpga_basicIO_drc_routed.rpt -pb fpga_basicIO_drc_routed.pb -rpx fpga_basicIO_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file fpga_basicIO_methodology_drc_routed.rpt -pb fpga_basicIO_methodology_drc_routed.pb -rpx fpga_basicIO_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file fpga_basicIO_power_routed.rpt -pb fpga_basicIO_power_summary_routed.pb -rpx fpga_basicIO_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file fpga_basicIO_route_status.rpt -pb fpga_basicIO_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file fpga_basicIO_timing_summary_routed.rpt -pb fpga_basicIO_timing_summary_routed.pb -rpx fpga_basicIO_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file fpga_basicIO_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file fpga_basicIO_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file fpga_basicIO_bus_skew_routed.rpt -pb fpga_basicIO_bus_skew_routed.pb -rpx fpga_basicIO_bus_skew_routed.rpx"
+  close_msg_db -file route_design.pb
+} RESULT]
+if {$rc} {
+  write_checkpoint -force fpga_basicIO_routed_error.dcp
+  step_failed route_design
+  return -code error $RESULT
+} else {
+  end_step route_design
   unset ACTIVE_STEP 
 }
 

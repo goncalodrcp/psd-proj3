@@ -2,11 +2,13 @@
 # Webtalk v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Dec 21 12:06:46 2018
-# Process ID: 8026
+# Start of session at: Thu Jan  3 01:18:46 2019
+# Process ID: 11733
 # Current directory: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.sim/sim_1/behav/xsim
 # Command line: wbtcv -mode batch -source /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.sim/sim_1/behav/xsim/xsim.dir/control_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
 source /home/josecoelho/Documents/IST/PSD/Labs/Lab3/psd-proj3/Lab3.sim/sim_1/behav/xsim/xsim.dir/control_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:06 . Memory (MB): peak = 288.422 ; gain = 0.000 ; free physical = 4378 ; free virtual = 10366
+INFO: [Common 17-206] Exiting Webtalk at Thu Jan  3 01:18:52 2019...

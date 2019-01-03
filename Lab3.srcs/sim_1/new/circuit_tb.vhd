@@ -1,15 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity circuit_tb is
 end circuit_tb;
 
@@ -32,7 +23,7 @@ architecture Behavioral of circuit_tb is
     signal clk : std_logic := '0';
     signal reset : std_logic := '1';
     signal data : std_logic_vector (15 downto 0) := X"0000";
-    signal k : std_logic_vector (2 downto 0) := "101";
+    signal k : std_logic_vector (2 downto 0) := "000";
     signal btn_input : std_logic_vector (3 downto 0) := "0000";
 
     -- Outputs
@@ -89,7 +80,7 @@ begin
                  "0000" after 2610 ns;
            
     
-    k <= "011" after 160 ns;
+    k <= "101" after 160 ns;
     
     -- Class2
     data <= X"c99a" after 240 ns,

@@ -2,6 +2,7 @@
 vhdl xil_defaultlib  \
 "../../../../Lab3.srcs/sources_1/new/datapath.vhd" \
 "../../../../Lab3.srcs/sources_1/new/feature_comparator.vhd" \
+"../../../../Lab3.srcs/sources_1/new/sorted_registers.vhd" \
 "../../../../Lab3.srcs/sim_1/new/datapath_tb.vhd" \
 
 # Do not sort compile order
