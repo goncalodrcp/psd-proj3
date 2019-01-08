@@ -2,3 +2,6 @@ Running: xsim.dir/circuit_tb_behav/xsimk -simmode gui -wdb circuit_tb_behav.wdb 
 Design successfully loaded
 Design Loading Memory Usage: 33256 KB (Peak: 33264 KB)
 Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 114776 KB (Peak: 180528 KB)
+Simulation CPU Usage: 80 ms
